@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    /* background-color: slategray; */
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: slateblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav {
+    width:40%;
+    height: 100%;
+    /* background-color: crimson   ; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.mid-nav {
+    width: 40%;
+    height: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mid-nav h1 {
+    font-size: 1.5vw;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+.right-nav {
+    width: 20%;
+    height: 100%;
+    /* background-color: deepskyblue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-nav button {
+    margin: 0 .5vw;
+    padding: .6vw 1vw;
+    border: none;
+    border-radius: 50px;
+    font-size: .8vw;
+}
+
+.register {
+    background-color: #000;
+    color: #fff;
+}
+
+.login {
+    background-color: #eaf4f4;
+}
+
+.menubutton {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 425px) {
+
+    nav {
+        height: 80px;
+        background-color: slategray;
+    }
+
+    .left-nav {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .mid-nav {
+        width: 70%;
+        height: 100%;
+        /* background-color: crimson; */
+        padding: 0 3vh;
+    }
+
+    .mid-nav h1 {
+        font-size: 2.5vh;
+    }
+
+    .menubutton {
+        display: block;
+        width: 30%;
+        height: 100%;
+        /* background-color: deeppink; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 3vh;
+    }
+
+    .menubutton i {
+        font-size: 2.5vh;
+    }
+
+
+    .dropdown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background-color: slategray;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown a {
+        font-size: 2.3vh;
+        margin: 2vh 3vh;
+    }
+}
